@@ -1,0 +1,155 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  .textarea {
+    min-width: 630px;
+    min-height: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    color: rgba($color: #ffffff, $alpha: 0.8);
+    font-size: 16px;
+    background: rgba($color: #000000, $alpha: 0.3);
+    backdrop-filter: blur(3px);
+    outline: none;
+    border: 1px solid rgba($color: #cccccc, $alpha: 0.1);
+    background-repeat: no-repeat;
+    background-position: left bottom;;
+    background-size: contain;
+  }
+  .keyboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 630px;
+    .row {
+      display: flex;
+      gap: 5px;
+      justify-content: space-between;
+      .key {
+        cursor: pointer;
+        min-width: 37px;
+        min-height: 37px;
+        background-color: rgba($color: #dddddd, $alpha: 0.9);
+        border-radius: 4px;
+        color: #000000;
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 15px;
+        transition: 0s;
+        border: none;
+        outline: 1px solid rgba($color: #000000, $alpha: 0.3);
+        box-shadow: 0px 2px 2px rgba($color: #acacac, $alpha: 0.9);
+        &:active {
+          background-color: rgba($color: #bebebe, $alpha: 0.9);
+          transition: 0s;
+          box-shadow: 0px 0px 0px transparent;
+          position: relative;
+          top: 2px;
+        }
+      }
+      .win {
+          background-image: url('../assets/img/win.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          background-size: 27px 23px;
+      }
+    }
+  }
+}
+
+.backspace,
+.capslock,
+.enter,
+.tab,
+.del,
+.shift,
+.alt,
+.win {
+  cursor: pointer;
+  width: 100%;
+  background-color: rgba($color: #dddddd, $alpha: 0.9);
+  border-radius: 4px;
+  color: #000000;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 15px;
+  border: none;
+  outline: 1px solid rgba($color: #000000, $alpha: 0.3);
+  box-shadow: 0px 2px 2px rgba($color: #acacac, $alpha: 0.9);
+  transition: 0s;
+  &:active {
+    background-color: rgba($color: #bebebe, $alpha: 0.9);
+    box-shadow: 0px 0px 0px transparent;
+    position: relative;
+    top: 2px;
+    transition: 0s;
+  }
+}
+
+.backspace {
+  min-width: calc(37px + 37px + 5px);
+  max-width: calc(37px + 37px + 5px);
+}
+
+.shift-right,
+.del,
+.tab,
+.ctrl {
+  cursor: pointer;
+  min-width: 37px;
+  min-height: 37px;
+  max-width: 37px;
+  max-height: 37px;
+  background-color: rgba($color: #dddddd, $alpha: 0.9);
+  border-radius: 4px;
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Gloria Hallelujah', cursive;
+  border: none;
+  outline: 1px solid rgba($color: #000000, $alpha: 0.3);
+  box-shadow: 0px 2px 2px rgba($color: #acacac, $alpha: 0.9);
+  transition: 0s;
+  &:active {
+    background-color: rgba($color: #bebebe, $alpha: 0.9);
+    box-shadow: 0px 0px 0px transparent;
+    position: relative;
+    top: 2px;
+    transition: 0s;
+  }
+}
+
+.ctrl {
+  min-width: calc(37px + (35px / 7));
+  max-width: calc(37px + (35px / 7));
+}
+
+.shift-right,
+.enter {
+  min-width: calc(37px + 42px + 5px);
+  max-width: calc(37px + 42px + 5px);
+}
+
+.space {
+  cursor: pointer;
+  font-family: 'Gloria Hallelujah', cursive;
+  width: 150px;
+  min-width: 230px;
+  background-color: rgba($color: #dddddd, $alpha: 0.9);
+  border-radius: 4px;
+  color: #000000;
+  font-size: 15px;
+  border: none;
+  outline: 1px solid rgba($color: #000000, $alpha: 0.3);
+  box-shadow: 0px 2px 2px rgba($color: #acacac, $alpha: 0.9);
+  transition: 0s;
+  &:active {
+    background-color: rgba($color: #bebebe, $alpha: 0.9);
+    box-shadow: 0px 0px 0px transparent;
+    position: relative;
+    top: 2px;
+    transition: 0s;
+  }
+}
